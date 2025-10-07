@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bí Quyết Thu Hút & Giữ Chân Nhân Tài IT Việt Nam 2024-2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+            background-color: #1a237e;
+            color: #E0E0E0;
+        }
+        .bg-brand-orange { background-color: #FF9800; }
+        .bg-brand-green { background-color: #009688; }
+        .bg-brand-blue { background-color: #5C6BC0; }
+        .bg-brand-darkblue { background-color: #1a237e; }
+        .text-brand-orange { color: #FF9800; }
+        .text-brand-green { color: #009688; }
+        .text-brand-blue { color: #5C6BC0; }
+        .border-brand-orange { border-color: #FF9800; }
+        .border-brand-blue { border-color: #5C6BC0; }
+        .section-card {
+            background-color: rgba(92, 107, 192, 0.1);
+            border: 1px solid rgba(92, 107, 192, 0.3);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            transition: all 0.3s ease-in-out;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+        .nav-link.active {
+            background-color: #5C6BC0;
+            color: #FFFFFF;
+            border-left-color: #FF9800;
+            transform: translateX(5px);
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 450px;
+            max-height: 500px;
+        }
+         @media (max-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .pyramid-level {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+        }
+        .pyramid-level:hover {
+            transform: scale(1.05);
+            filter: brightness(1.2);
+        }
+        .source-text {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.875rem;
+            color: #9FA8DA;
+            opacity: 0.9;
+            font-style: italic;
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1a237e; }
+        ::-webkit-scrollbar-thumb { background: #5C6BC0; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #FF9800; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="flex flex-col lg:flex-row min-h-screen">
+        
+        <aside class="w-full lg:w-1/4 xl:w-1/5 bg-brand-darkblue p-6 lg:p-8 lg:sticky top-0 h-screen overflow-y-auto border-r border-brand-blue border-opacity-30">
+            <div class="flex items-center mb-10">
+                <span class="text-3xl font-bold text-brand-orange mr-3">📊</span>
+                <h1 class="text-2xl font-bold tracking-wider text-white uppercase">Talent <span class="text-brand-orange">Insights</span></h1>
+            </div>
+            <nav id="navigation" class="flex flex-col space-y-2">
+                <a href="#section-1" class="nav-link text-lg font-semibold py-3 px-4 rounded-r-lg">1. Bối Cảnh Thị Trường</a>
+                <a href="#section-2" class="nav-link text-lg font-semibold py-3 px-4 rounded-r-lg">2. Nền Tảng Cạnh Tranh</a>
+                <a href="#section-3" class="nav-link text-lg font-semibold py-3 px-4 rounded-r-lg">3. Động Lực Tăng Trưởng</a>
+                <a href="#section-4" class="nav-link text-lg font-semibold py-3 px-4 rounded-r-lg">4. Môi Trường Lý Tưởng</a>
+                <a href="#section-5" class="nav-link text-lg font-semibold py-3 px-4 rounded-r-lg">5. Trải Nghiệm Ứng Viên</a>
+                <a href="#section-6" class="nav-link text-lg font-semibold py-3 px-4 rounded-r-lg">6. Mô Hình Chiến Lược</a>
+                <a href="#section-7" class="nav-link text-lg font-semibold py-3 px-4 rounded-r-lg text-brand-orange border-l-4 border-brand-orange">7. Phân Tích Đối Chiếu: CMC TS</a>
+            </nav>
+        </aside>
+
+        <main class="w-full lg:w-3/4 xl:w-4/5 p-6 md:p-10 lg:p-12 overflow-y-auto">
+            
+            <header class="mb-12">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    GIẢI MÃ <span class="text-brand-orange">THỊ TRƯỜNG NHÂN TÀI IT VIỆT NAM</span> 2024-2025
+                </h1>
+                <p class="mt-4 text-xl text-brand-blue font-light">
+                    Phân tích chuyên sâu các yếu tố then chốt để thu hút, chinh phục và giữ chân những kỹ sư công nghệ hàng đầu.
+                </p>
+            </header>
+
+            <section id="section-1" class="section-card">
+                <h2 class="text-3xl font-bold mb-6 text-brand-orange tracking-wide">PHẦN 1: TOÀN CẢNH CUỘC CHIẾN GIÀNH NHÂN TÀI</h2>
+                <p class="text-lg leading-relaxed">Thị trường lao động IT Việt Nam đang chứng kiến một cuộc cạnh tranh khốc liệt. Sự bùng nổ của kinh tế số và vị thế trung tâm công nghệ mới của Việt Nam đã tạo ra một "thị trường của ứng viên". Dự kiến đến năm 2025, Việt Nam cần bổ sung hơn 500,000 nhân lực công nghệ, trong khi 93.49% lao động IT hiện tại đã và đang ứng dụng AI vào công việc. Điều này tạo áp lực kép cho nhà tuyển dụng: vừa phải cạnh tranh thu hút chuyên gia, vừa phải nâng cấp kỹ năng cho đội ngũ hiện tại.
+                    <span class="source-text">(Nguồn: Báo cáo Thị trường IT Việt Nam 2024 - TopDev)</span>
+                </p>
+            </section>
+
+            <section id="section-2" class="section-card">
+                <h2 class="text-3xl font-bold mb-6 text-brand-orange tracking-wide">PHẦN 2: NỀN TẢNG CẠNH TRANH - LƯƠNG, THƯỞNG & AN TOÀN TÀI CHÍNH</h2>
+                <p class="text-lg leading-relaxed mb-8">Tài chính vẫn là yếu tố khởi đầu, với 78.92% người lao động chọn mức lương là yếu tố số một khi tìm việc. Biểu đồ dưới đây cho thấy những lý do hàng đầu khiến nhân tài rời bỏ công ty, trong đó "Lương thấp hơn mong đợi" chiếm vị trí số một với 23.5%.
+                    <span class="source-text">(Nguồn: Báo cáo Thị trường IT Việt Nam 2024 - TopDev)</span>
+                </p>
+                <div class="chart-container mb-12">
+                    <canvas id="reasonsChart"></canvas>
+                </div>
+                
+                <div class="border-l-4 border-brand-orange pl-6 my-8 italic bg-brand-orange bg-opacity-10 p-6 rounded-r-lg">
+                    <h4 class="text-2xl font-bold text-white mb-2">Nghịch lý An toàn Tài chính</h4>
+                    <p>Mặc dù 60% được tăng lương, có đến 74% nhân sự IT vẫn cảm thấy thu nhập không đủ sống và 65% tin rằng họ đang bị trả lương thấp hơn giá trị thực.
+                        <span class="source-text">(Nguồn: Khảo sát Nơi làm việc tốt nhất Việt Nam - Anphabe, 2024)</span>
+                    </p>
+                </div>
+
+                <p class="text-lg leading-relaxed mt-8 mb-8">Để có cái nhìn trực quan về mức lương cạnh tranh, biểu đồ dưới đây so sánh mức lương trung bình hàng tháng (triệu VNĐ) cho các vị trí IT chủ chốt.
+                    <span class="source-text">(Dữ liệu tham khảo từ Báo cáo Thị trường IT Việt Nam 2024 - TopDev)</span>
+                </p>
+                <div class="chart-container">
+                    <canvas id="salaryChart"></canvas>
+                </div>
+            </section>
+            
+            <section id="section-3" class="section-card">
+                 <h2 class="text-3xl font-bold mb-6 text-brand-orange tracking-wide">PHẦN 3: ĐỘNG LỰC TĂNG TRƯỞNG - SỰ NGHIỆP, HỌC HỎI & THỬ THÁCH</h2>
+                 <div class="space-y-6 text-lg leading-relaxed">
+                     <p>Lương hấp dẫn có thể thu hút họ đến, nhưng chính cơ hội phát triển, thử thách trí tuệ và lộ trình sự nghiệp rõ ràng mới là yếu tố giữ chân họ ở lại lâu dài. Sự mập mờ về thăng tiến là một "cờ đỏ", thúc đẩy nhân tài tìm kiếm cơ hội ở nơi khác. Công việc "không còn thử thách" là lý do nghỉ việc phổ biến thứ ba, chỉ sau lương và văn hóa.
+                        <span class="source-text">(Nguồn: Báo cáo Thị trường IT Việt Nam 2024 - TopDev)</span>
+                     </p>
+                 </div>
+            </section>
+
+            <section id="section-4" class="section-card">
+                <h2 class="text-3xl font-bold mb-6 text-brand-orange tracking-wide">PHẦN 4: MÔI TRƯỜNG LÝ TƯỞNG - VĂN HÓA, LINH HOẠT & HẠNH PHÚC</h2>
+                 <p class="text-lg leading-relaxed mb-8">Khi các yếu tố nền tảng được đáp ứng, các yếu tố "mềm" về môi trường và văn hóa sẽ trở thành nhân tố quyết định. Đặc biệt, sự linh hoạt trong mô hình làm việc đang trở thành một tiêu chuẩn mới. Hơn một nửa số nhân sự IT ưu tiên các công ty có chính sách làm việc kết hợp (Hybrid).
+                    <span class="source-text">(Nguồn: Báo cáo Thị trường IT Việt Nam 2024 - TopDev)</span>
+                 </p>
+                 <div class="chart-container" style="height: 400px; max-height: 400px;">
+                    <canvas id="hybridChart"></canvas>
+                </div>
+            </section>
+
+            <section id="section-5" class="section-card">
+                <h2 class="text-3xl font-bold mb-6 text-brand-orange tracking-wide">PHẦN 5: TỐI ƯU HÓA TRẢI NGHIỆM ỨNG VIÊN</h2>
+                <div class="space-y-6 text-lg leading-relaxed">
+                    <p>Cuộc chiến giành nhân tài bắt đầu từ những điểm chạm đầu tiên. Một quy trình tuyển dụng tồi tệ có thể phá hủy mọi nỗ lực xây dựng thương hiệu tốt đẹp. Ứng viên ngày nay rất chủ động tìm kiếm thông tin trên các trang review công ty. Xây dựng thương hiệu nhà tuyển dụng mạnh mẽ là một chiến lược thu hút nhân tài dài hạn và hiệu quả.</p>
+                    <div class="bg-red-900 bg-opacity-30 border border-red-500 rounded-lg p-6">
+                        <h4 class="text-2xl font-bold text-red-400 mb-3">CẢNH BÁO "CỜ ĐỎ" TRONG TUYỂN DỤNG</h4>
+                        <ul class="list-disc list-inside space-y-2 text-red-300">
+                            <li><strong class="text-white">Quy trình kém chuyên nghiệp:</strong> Lịch phỏng vấn thay đổi, người phỏng vấn đến muộn.</li>
+                            <li><strong class="text-white">Thiếu minh bạch:</strong> JD chung chung, câu trả lời vòng vo về lương.</li>
+                            <li><strong class="text-white">Hành vi gây áp lực:</strong> Hối thúc ứng viên phải đưa ra quyết định ngay.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="section-6" class="section-card">
+                 <h2 class="text-3xl font-bold mb-6 text-brand-orange tracking-wide">PHẦN 6: MÔ HÌNH CHIẾN LƯỢC EVP TOÀN DIỆN</h2>
+                 <p class="text-xl mb-8">Để dẫn đầu thị trường, doanh nghiệp cần xây dựng một Gói Giá trị Nhân viên (EVP) toàn diện theo mô hình 3 tầng. Hãy tương tác với kim tự tháp dưới đây để khám phá chi tiết.</p>
+                 <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                    <div id="pyramid" class="w-full md:w-1/2 flex flex-col items-center space-y-1">
+                        <div data-level="3" class="pyramid-level bg-brand-orange text-center p-4 w-2/4 h-24 flex items-center justify-center"><h3 class="text-xl font-bold text-brand-darkblue">TẦNG 3: GẮN KẾT</h3></div>
+                        <div data-level="2" class="pyramid-level bg-brand-blue text-center p-4 w-3/4 h-28 flex items-center justify-center"><h3 class="text-xl font-bold text-white">TẦNG 2: CẠNH TRANH</h3></div>
+                        <div data-level="1" class="pyramid-level bg-brand-green text-center p-4 w-full h-32 flex items-center justify-center"><h3 class="text-xl font-bold text-white">TẦNG 1: NỀN TẢNG</h3></div>
+                    </div>
+                    <div id="pyramid-details" class="w-full md:w-1/2 p-6 rounded-lg bg-brand-blue bg-opacity-20 border border-brand-blue min-h-[300px]">
+                        <div class="text-center p-8"><h3 class="text-2xl text-white font-bold">CHỌN MỘT TẦNG</h3><p class="mt-2 text-brand-blue">Click vào một tầng của kim tự tháp để xem chi tiết.</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-7" class="section-card border-2 border-brand-orange">
+                <h2 class="text-3xl font-bold mb-2 text-brand-orange tracking-wide">PHẦN 7: PHÂN TÍCH ĐỐI CHIẾU: CMC TS & KỲ VỌNG THỊ TRƯỜNG</h2>
+                <p class="text-lg mb-8 text-gray-300">Dựa trên khảo sát nội bộ tại CMC TS và so sánh với kỳ vọng chung của ứng viên trên thị trường, chúng ta có thể rút ra những điểm tương đồng, bất cập và cơ hội chiến lược.</p>
+
+                <div class="mb-10">
+                    <h3 class="text-2xl font-bold text-brand-green mb-4 border-b-2 border-brand-green pb-2">✅ ĐIỂM TƯƠNG ĐỒNG & THẾ MẠNH</h3>
+                    <div class="space-y-4 text-lg">
+                        <p><strong class="text-white">1. Chú trọng vào "Cơ hội Học hỏi & Phát triển":</strong> Khảo sát nội bộ CMC TS cho thấy đây là yếu tố EVP (Gói giá trị nhân viên) được đánh giá cao nhất. Điều này <strong class="text-brand-green">hoàn toàn trùng khớp</strong> với kỳ vọng "Tầng 2: Cạnh Tranh" của ứng viên thị trường, những người luôn tìm kiếm sự phát triển sự nghiệp và thử thách công nghệ.</p>
+                        <p><strong class="text-white">2. Văn hóa phỏng vấn tích cực:</strong> Với 78% người phỏng vấn tại CMC TS ưu tiên tạo ra một cuộc trao đổi giá trị và có tới 78% chọn cách tiếp cận "cùng tư duy giải quyết vấn đề", công ty đang sở hữu một nền tảng văn hóa tuyển dụng rất hiện đại và cởi mở. Điều này đáp ứng trực tiếp nhu cầu của ứng viên về một <strong class="text-brand-green">trải nghiệm tuyển dụng chuyên nghiệp và tôn trọng.</strong></p>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-4 border-b-2 border-yellow-400 pb-2">⚠️ ĐIỂM BẤT CẬP & KHOẢNG TRỐNG</h3>
+                     <div class="space-y-4 text-lg">
+                        <p><strong class="text-white">1. Nghịch lý về Lương & Phúc lợi:</strong> Đây là <strong class="text-yellow-400">khoảng trống lớn nhất.</strong> Trong khi nội bộ xếp Lương là EVP quan trọng thứ hai, nó lại là <strong class="text-yellow-400">lý do số 1</strong> khiến ứng viên giỏi từ chối offer. Điều này cho thấy có sự chênh lệch giữa nhận định nội bộ về mức độ "cạnh tranh" và thực tế thị trường. Yếu tố "Tầng 1: Nền Tảng" đang chưa đủ vững chắc.</p>
+                        <p><strong class="text-white">2. Quy trình Tuyển dụng - Giữa Tầm nhìn và Thực thi:</strong> Dù có tư duy đúng đắn về trải nghiệm ứng viên, việc "Quy trình phỏng vấn quá dài/trải nghiệm không tốt" vẫn là lý do từ chối phổ biến thứ hai. Điều này cho thấy <strong class="text-yellow-400">khoảng cách giữa ý định và hành động.</strong> Quy trình chưa đủ linh hoạt và tốc độ đang làm xói mòn những ấn tượng tốt đẹp trong buổi phỏng vấn.</p>
+                        <p><strong class="text-white">3. Sức mạnh Thương hiệu Tuyển dụng:</strong> Khảo sát chỉ ra "Thương hiệu tuyển dụng chưa tốt" là một thách thức. Việc phụ thuộc chủ yếu vào Headhunter và Referral (mỗi kênh 35%) trong khi kênh Mạng xã hội chỉ chiếm 9% cho thấy CMC TS <strong class="text-yellow-400">chưa chủ động "kể câu chuyện" của mình</strong> ra thị trường. Công ty đang bỏ lỡ cơ hội truyền thông về chính thế mạnh lớn nhất của mình là "cơ hội phát triển".</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-blue-400 mb-4 border-b-2 border-blue-400 pb-2">💡 CƠ HỘI & ĐỀ XUẤT CHIẾN LƯỢC</h3>
+                    <div class="space-y-4 text-lg">
+                        <p><strong class="text-white">1. Củng cố "Tầng 1" - Định vị lại Đãi ngộ:</strong> Cần thực hiện các khảo sát lương thị trường một cách có hệ thống để đảm bảo gói đãi ngộ thực sự cạnh tranh, đặc biệt cho các vị trí chiến lược. Đây là điều kiện tiên quyết để các yếu tố hấp dẫn khác có cơ hội phát huy.</p>
+                        <p><strong class="text-white">2. "Marketing hóa" thế mạnh EVP số 1:</strong> Chủ động xây dựng các câu chuyện thành công (success stories) về sự phát triển của nhân viên tại CMC TS. Sử dụng "Nghệ thuật kể chuyện" (Employer Storytelling) mà 74% người tham gia khảo sát mong muốn học hỏi để tạo các nội dung hấp dẫn trên blog, LinkedIn, chia sẻ tại các sự kiện công nghệ.</p>
+                        <p><strong class="text-white">3. Tối ưu hóa Quy trình Tuyển dụng:</strong> Rà soát lại toàn bộ quy trình, trao quyền nhiều hơn cho người phỏng vấn để ra quyết định, rút ngắn thời gian phản hồi ứng viên. Mỗi một ngày chậm trễ là một cơ hội trao cho đối thủ cạnh tranh.</p>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="text-center mt-12 py-6 border-t border-brand-blue border-opacity-30">
+                <p class="text-brand-blue">&copy; 2025 - Rosie Đào Hạnh Giang CEO Build Talents</p>
+                <p class="text-xs text-brand-blue opacity-70 mt-2">Dữ liệu được tổng hợp và phân tích từ các báo cáo uy tín như TopDev IT Market Report 2024 và Anphabe.</p>
+            </footer>
+        </main>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('#navigation a');
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.4 };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href').substring(1) === entry.target.id) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+            sections.forEach(section => { observer.observe(section); });
+            
+            const pyramidLevels = document.querySelectorAll('.pyramid-level');
+            const detailsContainer = document.getElementById('pyramid-details');
+            const pyramidData = {
+                '1': { title: 'TẦNG 1: YẾU TỐ NỀN TẢNG', goal: 'TỒN TẠI: Đảm bảo có đủ điều kiện cơ bản để tham gia cuộc cạnh tranh.', elements: ['Lương thưởng cạnh tranh, công bằng', 'Phúc lợi cơ bản (bảo hiểm, ngày phép)', 'Môi trường làm việc an toàn, không độc hại', 'Quy trình tuyển dụng chuyên nghiệp'], color: 'text-brand-green' },
+                '2': { title: 'TẦNG 2: YẾU TỐ CẠNH TRANH', goal: 'THU HÚT: Tạo sức hấp dẫn khác biệt để chiến thắng ứng viên giỏi.', elements: ['Lộ trình sự nghiệp rõ ràng', 'Dự án thử thách & Công nghệ mới', 'Chính sách làm việc linh hoạt (Hybrid)', 'Phúc lợi nâng cao (đào tạo)'], color: 'text-brand-blue' },
+                '3': { title: 'TẦNG 3: YẾU TỐ GẮN KẾT', goal: 'GIỮ CHÂN: Xây dựng lòng trung thành và biến nhân viên thành đại sứ.', elements: ['Văn hóa doanh nghiệp tích cực, ghi nhận', 'Lãnh đạo truyền cảm hứng, trao quyền', 'Công việc có ý nghĩa và tác động xã hội', 'Cơ hội phát triển chuyên sâu'], color: 'text-brand-orange' }
+            };
+            pyramidLevels.forEach(level => {
+                level.addEventListener('click', () => {
+                    const levelId = level.dataset.level;
+                    const data = pyramidData[levelId];
+                    detailsContainer.innerHTML = `<h3 class="text-2xl font-bold ${data.color} mb-2">${data.title}</h3><p class="font-semibold text-white mb-4 bg-black bg-opacity-20 p-2 rounded">Mục tiêu: <span class="font-normal">${data.goal}</span></p><p class="font-semibold text-white mb-2">Yếu tố chính:</p><ul class="list-disc list-inside space-y-2 text-gray-300">${data.elements.map(el => `<li>${el}</li>`).join('')}</ul>`;
+                });
+            });
+
+            const wrapLabel = (label, maxLength) => {
+                if (label.length <= maxLength) return label;
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if ((currentLine + word).length > maxLength) {
+                        lines.push(currentLine.trim());
+                        currentLine = '';
+                    }
+                    currentLine += word + ' ';
+                });
+                lines.push(currentLine.trim());
+                return lines;
+            };
+
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                return Array.isArray(label) ? label.join(' ') : label;
+            };
+
+            const chartDefaultOptions = {
+                maintainAspectRatio: false,
+                responsive: true,
+                plugins: {
+                    legend: { labels: { color: '#E0E0E0', font: { size: 14, family: "'Oswald', sans-serif" } } },
+                    tooltip: {
+                        callbacks: { title: tooltipTitleCallback },
+                        titleFont: { family: "'Oswald', sans-serif", size: 16 },
+                        bodyFont: { family: "'Oswald', sans-serif", size: 14 },
+                    }
+                },
+                scales: {
+                    x: { ticks: { color: '#9FA8DA', font: { family: "'Oswald', sans-serif" } }, grid: { color: 'rgba(92, 107, 192, 0.2)' } },
+                    y: { ticks: { color: '#9FA8DA', font: { family: "'Oswald', sans-serif" } }, grid: { color: 'rgba(92, 107, 192, 0.2)' } }
+                }
+            };
+            
+            const ctxReasons = document.getElementById('reasonsChart');
+            if(ctxReasons) new Chart(ctxReasons, {
+                type: 'bar',
+                data: {
+                    labels: ['Lương thấp hơn mong đợi', 'Sếp / Văn hóa không phù hợp', 'Công việc không còn thử thách', 'Lộ trình sự nghiệp không rõ ràng'],
+                    datasets: [{
+                        label: 'Tỷ lệ (%)',
+                        data: [23.5, 21.0, 18.2, 15.8],
+                        backgroundColor: ['#5C6BC0', '#009688', '#FF9800', '#1a237e'],
+                        borderColor: '#9FA8DA',
+                        borderWidth: 1
+                    }]
+                },
+                options: { ...chartDefaultOptions, plugins: { ...chartDefaultOptions.plugins, legend: { display: false } }, scales: { y: { beginAtZero: true, ...chartDefaultOptions.scales.y }, x: { ...chartDefaultOptions.scales.x, ticks: { ...chartDefaultOptions.scales.x.ticks, callback: function(value) { let label = this.getLabelForValue(value); return wrapLabel(label, 15); }}}}}
+            });
+
+            const ctxSalary = document.getElementById('salaryChart');
+            if(ctxSalary) new Chart(ctxSalary, {
+                type: 'bar',
+                data: {
+                    labels: ['Solution Architect', 'AI Engineer / Data Scientist', 'Cloud Engineer', 'Mobile Developer', 'Front-end Developer', 'Full-stack Developer', 'DevOps Engineer'],
+                    datasets: [{
+                        label: 'Lương trung bình (triệu VNĐ)',
+                        data: [73.95, 44.1, 43.6, 36.35, 35.6, 30.5, 28.1],
+                        backgroundColor: '#FF9800',
+                        borderColor: '#FFE0B2',
+                        borderWidth: 1
+                    }]
+                },
+                options: { ...chartDefaultOptions, indexAxis: 'y', plugins: { ...chartDefaultOptions.plugins, legend: { display: false } }, scales: { x: { beginAtZero: true, ...chartDefaultOptions.scales.x }}}
+            });
+            
+            const ctxHybrid = document.getElementById('hybridChart');
+            if(ctxHybrid) new Chart(ctxHybrid, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Ưu tiên Hybrid/Remote', 'Ưu tiên làm tại văn phòng'],
+                    datasets: [{
+                        label: 'Tỷ lệ (%)',
+                        data: [55, 45],
+                        backgroundColor: ['#009688', '#5C6BC0'],
+                        borderColor: '#1a237e',
+                        borderWidth: 3
+                    }]
+                },
+                options: { ...chartDefaultOptions, scales: { x: { display: false }, y: { display: false } } }
+            });
+        });
+    </script>
+</body>
+</html>
